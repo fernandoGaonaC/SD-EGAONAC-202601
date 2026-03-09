@@ -1,16 +1,20 @@
 import '../stylesheet/Menu.css'
+import { Link } from 'react-router-dom';
 const Menu =()=>{
 return(
     <>
+    <header>
+        <h2>Tienda Generica</h2>
+    </header>
     <nav>
-        <ul>
-            <a href="/">login</a>
-            <a href="/usuario">Usuarios</a>
-            <a href="/cliente">Clientes</a>
-            <a href="/provedores">Provedores</a>
-            <a href="/Producto">Productos</a>
-            <a href="/ventas">Ventas</a>
-            <a href="/Reportes">Reportes</a>
+        <ul>    
+          <li><Link to="/usuario">Usuarios</Link></li>
+          <li><Link to="/cliente">Clientes</Link></li>
+          <li><Link to="/provedores">Proveedores</Link></li>
+          <li><Link to="/producto">Productos</Link></li>
+          <li><Link to="/ventas">Ventas</Link></li>
+          <li><Link to="/reportes">Reportes</Link></li>
+
         </ul>
     </nav>
     </>

@@ -1,3 +1,32 @@
 a:hover{
-    color: blueviolet;
+    color: white;
+    transform: scale(.3);
+}
+nav{
+    background-color: #5352ed;
+    height: 50px;
+    width: 100%;
+}
+body{
+    background-color: #333333;
+     margin: 0;
+    padding: 0;
+}
+header{
+    
+    background-color: #5352ed;
+    color: white;
+    padding: 0;
+    height: 60px;;
+}
+h2{
+    text-align: center;
+}
+nav ul{
+     display: flex;          /* coloca los ítems en fila */
+  justify-content: center;/* centra horizontalmente */
+  align-items: center;    /* centra verticalmente */
+  gap: 30px;              /* espacio entre ítems */
+  height: 50px;           /* altura del nav */
+
 }

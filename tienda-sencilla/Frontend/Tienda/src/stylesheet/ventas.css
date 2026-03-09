@@ -1,0 +1,117 @@
+.contenedor-venta {
+  background-color: #FFF8E7;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #D6CFC7;
+  max-width: 900px;   /* ancho máximo para pantallas grandes */
+  width: 90%;         /* ocupa 90% ancho en pantallas más pequeñas */
+  box-sizing: border-box;
+}
+
+/* Datos cliente: fila flexible */
+.fila {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(80px, 1fr));
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Encabezado productos */
+.productos-header {
+  display: grid;
+  grid-template-columns: 120px 100px 1.5fr 80px 120px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Filas producto */
+.producto {
+  display: grid;
+  grid-template-columns: 120px 100px 1.5fr 80px 120px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Totales */
+.totales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.resumen {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 10px 20px;
+  flex-grow: 1;
+  min-width: 220px;
+}
+
+.confirmar {
+  height: 40px;
+  background-color: #8B6F47;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.confirmar:hover {
+  background-color: #6F5637;
+}
+
+input {
+  border: 1px solid #D6CFC7;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 650px) {
+
+  .fila {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .fila label, 
+  .fila button,
+  .fila input {
+    grid-column: span 2;
+  }
+
+  .productos-header,
+  .producto {
+    grid-template-columns: 1fr;
+    grid-row-gap: 8px;
+  }
+
+  .producto button {
+    width: 100%;
+  }
+
+  .totales {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .confirmar {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .resumen {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    min-width: auto;
+  }
+}

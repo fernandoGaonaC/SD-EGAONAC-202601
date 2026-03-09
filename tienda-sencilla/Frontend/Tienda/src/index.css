@@ -1,36 +1,38 @@
-body{
-  background-color: #456;
+header {
+  margin: 0;
+  padding: 0;
 }
-.contenedor-login{
-  margin: auto;
-  background-color: #124;
-  color:#fff;
-  width: 500px;
-  height: 200px;
-}
-form{
-  text-align: center;
-  align-content: center;
-}
-.contenedor-login label{
-  font-size: 30px;
 
-}
-button {
-  margin: auto;
-  background: #fff;
-
-}
-nav{
-  width: 100%;
-  background-color: #124;
-  height: 100px;
-  display: inline-block;
-}
-nav a {
+header h2 {
+  margin: 0;   /* elimina el espacio extra */
+  padding: 10px;
   color: white;
-  size: 40 px;
-  text-decoration: none;
-  margin: 40px;
+  text-align: center;
+}
 
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #213FD9;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;   /* elimina margen por defecto */
+  padding: 0;  /* elimina padding por defecto */
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+}
+
+nav a:hover {
+  color: #fff;
 }
