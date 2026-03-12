@@ -57,10 +57,13 @@ const Seleccion=()=>{
         <>
         <Menu></Menu>
         <h2>Clientes</h2>
+        <div className="contenedor-botones">
+
         <button onClick={()=>{setestado(1)}}>Crear</button>
         <button onClick={()=>{setestado(2)}}>listar</button>
         <button onClick={()=>{setestado(3)}}>editar</button>
         <button onClick={()=>{setestado(4)}}>eliminar</button>
+        </div>
         {Seleccion()}
 
 

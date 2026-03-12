@@ -1,89 +1,98 @@
 .contenedor-venta {
-  background-color: #FFF8E7;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 20px;
-  border: 1px solid #D6CFC7;
-  max-width: 900px;   /* ancho máximo para pantallas grandes */
-  width: 90%;         /* ocupa 90% ancho en pantallas más pequeñas */
+  background: #ffffff;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  max-width: 950px;
+  width: 92%;
   box-sizing: border-box;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* Datos cliente: fila flexible */
+/* FILA SUPERIOR */
 .fila {
   display: grid;
   grid-template-columns: repeat(7, minmax(80px, 1fr));
-  gap: 10px;
+  gap: 12px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-/* Encabezado productos */
+/* HEADERS PRODUCTOS */
 .productos-header {
   display: grid;
-  grid-template-columns: 120px 100px 1.5fr 80px 120px;
-  font-weight: bold;
+  grid-template-columns: 120px 110px 1.6fr 90px 130px;
+  font-weight: 600;
+  color: #333;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 
-/* Filas producto */
+/* FILA PRODUCTO */
 .producto {
   display: grid;
-  grid-template-columns: 120px 100px 1.5fr 80px 120px;
-  gap: 10px;
-  margin-bottom: 10px;
+  grid-template-columns: 120px 110px 1.6fr 90px 130px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
-/* Totales */
+/* INPUTS */
+input {
+  border: 1px solid #cfd6df;
+  padding: 7px 10px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #f9fbfd;
+  font-size: 14px;
+  transition: all .2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1f3c88;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(31,60,136,0.15);
+}
+
+/* BOTONES CONSULTAR */
+
+
+
+
+/* SECCION TOTALES */
 .totales {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
-  gap: 15px;
+  margin-top: 25px;
+  gap: 20px;
 }
 
 .resumen {
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 10px 20px;
+  grid-template-columns: 140px 1fr;
+  gap: 12px 20px;
   flex-grow: 1;
-  min-width: 220px;
+  min-width: 240px;
+  align-items: center;
 }
 
-.confirmar {
-  height: 40px;
-  background-color: #8B6F47;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 0 15px;
-  cursor: pointer;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
+/* BOTON CONFIRMAR */
 
-.confirmar:hover {
-  background-color: #6F5637;
-}
 
-input {
-  border: 1px solid #D6CFC7;
-  padding: 5px;
-  border-radius: 5px;
-  width: 100%;
-  box-sizing: border-box;
-}
 
-/* Media Query para pantallas pequeñas */
+
+/* RESPONSIVE */
 @media (max-width: 650px) {
 
   .fila {
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    gap: 10px;
   }
 
-  .fila label, 
+  .fila label,
   .fila button,
   .fila input {
     grid-column: span 2;
@@ -111,7 +120,6 @@ input {
 
   .resumen {
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    min-width: auto;
+    gap: 10px;
   }
 }

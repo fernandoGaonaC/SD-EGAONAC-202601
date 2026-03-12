@@ -8,7 +8,8 @@ const Producto=()=>{
          <h2>Productos</h2>
         <br />
         <label htmlFor="">Nombre del Archivo</label>
-         <button>Examinar</button>
+        <input type="file" value="" />         
+         
          <br />
          <button>Cargar</button>
        </div>

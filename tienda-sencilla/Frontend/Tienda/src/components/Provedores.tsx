@@ -49,10 +49,13 @@ const [estado,cambioEstado]=useState<Number>(0);
         <>
         <Menu></Menu>
         <h2>Provedores</h2>
+        <div className="contenedor-botones">
+
         <button onClick={()=>{cambioEstado(1)}}>Crear</button>
         <button onClick={()=>{cambioEstado(2)}}>Eliminar</button>
         <button onClick={()=>{cambioEstado(3)}}>Listar</button>
         <button onClick={()=>{cambioEstado(4)}}>Actualizar</button>
+        </div>
         {seleccion()}
         </>
     )

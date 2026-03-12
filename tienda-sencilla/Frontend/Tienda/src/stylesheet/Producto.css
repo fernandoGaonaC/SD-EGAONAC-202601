@@ -1,3 +1,7 @@
 .contenedor-productos{
-background-color: bisque;
+background-color: E8EAF6;
+margin: 30px;
+border-radius: 20px;
+padding: 30px;
+box-shadow: 3px 3px 2px 4px rgba(0, 0, 0, 0.2);
 }

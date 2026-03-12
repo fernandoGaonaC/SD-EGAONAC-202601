@@ -8,9 +8,15 @@ form{
 }
 
 button{
-    background-color: #7bed9f;
-    height: 30px;
-    color: white;
-    font-size: medium;
-    border-radius: 15px;
+    background-color: #2E7D32;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+button:hover {
+  background-color: #1B5E20;
 }

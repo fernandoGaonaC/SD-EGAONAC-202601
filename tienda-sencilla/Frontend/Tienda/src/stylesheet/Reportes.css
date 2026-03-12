@@ -1,0 +1,29 @@
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #3949AB;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #E8EAF6;
+}
+
+.contenedor-tabla{
+    border-radius: 10px;
+    background-color: #E8EAF6;
+    margin: 50px;
+    padding: 20px;
+}
+
+.contenedor-botones{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
